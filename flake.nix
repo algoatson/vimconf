@@ -290,6 +290,11 @@
       url = "github:epwalsh/obsidian.nvim";
       flake = false;
     };
+
+    nvim-glow-src = {
+      url = "github:ellisonleao/glow.nvim";
+      flake = false;
+    };
   };
 
   outputs = inputs@{ self, flake-utils, nixpkgs, ... }:
@@ -330,6 +335,7 @@
           nvim-colorizer # colorize html color codes.
           nvim-presence
           nvim-obsidian
+          nvim-glow
 
           # git
           vimPlugins.neogit

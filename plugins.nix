@@ -138,4 +138,6 @@ with inputs; {
   nvim-tagbar = plugin "nvim-tagbar" nvim-tagbar-src;
 
   nvim-obsidian = plugin "nvim-obsidian" nvim-obsidian-src;
+
+  nvim-glow = plugin "nvim-glow" nvim-glow-src;
 }
