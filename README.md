@@ -1,5 +1,5 @@
-# nvimconf2.0
-my new neovim config for nix, built with flakes.
+# vimconf
+my new neovim config built with nix flakes for nix.
 
 # Usage
 
