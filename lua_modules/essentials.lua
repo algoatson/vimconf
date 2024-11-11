@@ -73,7 +73,7 @@ vim.api.nvim_set_keymap('n', '<leader>wh', '<cmd>wincmd h<cr>', {})
 vim.api.nvim_set_keymap('n', '<leader>cc', '<cmd>ColorizerToggle<cr>', {})
 vim.api.nvim_set_keymap('n', '<leader>tt', '<cmd>Telescope<cr>', {})
 vim.api.nvim_set_keymap('n', '<leader>tb', '<cmd>Tagbar<cr>', {})
-vim.api.nvim_set_keymap('n', '<leader>os', '<cmd>ObsidianQuickSwitch<cr>', {})
+vim.api.nvim_set_keymap('n', '<leader>gd', '<cmd>GodBoltCompiler telescope<CR>', {})
 vim.api.nvim_set_keymap('n', 'k', 'gk', {}) -- show docs. TODO move to lsp file
 
 -- Flag to check if clipboard has been set

@@ -295,6 +295,10 @@
       url = "github:ellisonleao/glow.nvim";
       flake = false;
     };
+    nvim-godbolt-src = {
+      url = "github:p00f/godbolt.nvim";
+      flake = false;
+    };
   };
 
   outputs = inputs@{ self, flake-utils, nixpkgs, ... }:
@@ -336,6 +340,7 @@
           nvim-presence
           nvim-obsidian
           nvim-glow
+          nvim-godbolt
 
           # git
           vimPlugins.neogit

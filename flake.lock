@@ -703,6 +703,22 @@
         "type": "github"
       }
     },
+    "nvim-godbolt-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1730514863,
+        "narHash": "sha256-X3P0l+O+FmLlLOXMqiZQdKgtpciVgoy8cGLFuQyN570=",
+        "owner": "p00f",
+        "repo": "godbolt.nvim",
+        "rev": "ffb1b98087daa1e10087a3bf06c30291a17b1310",
+        "type": "github"
+      },
+      "original": {
+        "owner": "p00f",
+        "repo": "godbolt.nvim",
+        "type": "github"
+      }
+    },
     "nvim-matchup-src": {
       "flake": false,
       "locked": {
@@ -887,6 +903,7 @@
         "nvim-dap-ui-src": "nvim-dap-ui-src",
         "nvim-dap-virtual-text-src": "nvim-dap-virtual-text-src",
         "nvim-glow-src": "nvim-glow-src",
+        "nvim-godbolt-src": "nvim-godbolt-src",
         "nvim-matchup-src": "nvim-matchup-src",
         "nvim-obsidian-src": "nvim-obsidian-src",
         "nvim-presence-src": "nvim-presence-src",

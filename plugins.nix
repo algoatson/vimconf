@@ -140,4 +140,6 @@ with inputs; {
   nvim-obsidian = plugin "nvim-obsidian" nvim-obsidian-src;
 
   nvim-glow = plugin "nvim-glow" nvim-glow-src;
+
+  nvim-godbolt = plugin "nvim-godbolt" nvim-godbolt-src;
 }
