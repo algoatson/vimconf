@@ -96,6 +96,10 @@ require('cmp').setup({
     { name = "vsnip", },
     { name = "buffer", },
     { name = "crates", },
+    { name = "obsidian", },
+    { name = "obsidian_tags", },
+    { name = "obsidian_new", },
+
   },
   snippet = {expand = function(args) vim.fn['vsnip#anonymous'](args.body) end},
   -- formatting = {
