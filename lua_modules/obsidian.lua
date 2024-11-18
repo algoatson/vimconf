@@ -1,14 +1,4 @@
 require('obsidian').setup({
-  workspaces = {
-    {
-      name = "personal",
-      path = "/home/notrazor/.obsidian/Obsidian",
-    },
-  },
-
-})
-
-{
   -- A list of workspace names, paths, and configuration overrides.
   -- If you use the Obsidian app, the 'path' of a workspace should generally be
   -- your vault root (where the `.obsidian` folder is located).
@@ -332,6 +322,6 @@ require('obsidian').setup({
       return string.format("![%s](%s)", path.name, path)
     end,
   },
-}
+})
 
 vim.api.nvim_set_keymap('n', '<leader>os', '<cmd>ObsidianQuickSwitch<cr>', {})

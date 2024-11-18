@@ -142,4 +142,6 @@ with inputs; {
   nvim-glow = plugin "nvim-glow" nvim-glow-src;
 
   nvim-godbolt = plugin "nvim-godbolt" nvim-godbolt-src;
+
+  nvim-surround = plugin "nvim-surround" nvim-surround-src;
 }

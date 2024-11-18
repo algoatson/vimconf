@@ -767,6 +767,22 @@
         "type": "github"
       }
     },
+    "nvim-surround-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1730136751,
+        "narHash": "sha256-XVwvoM3Id9lCi9EgK/Y944UuCXj9niTnZ5I5+d1yVqQ=",
+        "owner": "kylechui",
+        "repo": "nvim-surround",
+        "rev": "dca2e998ff26681ee422b92c6ed39b3d2908d8a9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kylechui",
+        "repo": "nvim-surround",
+        "type": "github"
+      }
+    },
     "nvim-tagbar-src": {
       "flake": false,
       "locked": {
@@ -907,6 +923,7 @@
         "nvim-matchup-src": "nvim-matchup-src",
         "nvim-obsidian-src": "nvim-obsidian-src",
         "nvim-presence-src": "nvim-presence-src",
+        "nvim-surround-src": "nvim-surround-src",
         "nvim-tagbar-src": "nvim-tagbar-src",
         "nvim-trailblazer-src": "nvim-trailblazer-src",
         "nvim-treesitter-src": "nvim-treesitter-src",

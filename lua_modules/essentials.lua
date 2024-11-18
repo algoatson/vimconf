@@ -55,6 +55,21 @@ vim.o.foldlevel = 99
 vim.o.foldlevelstart = 99
 vim.o.foldenable = true
 
+local wk = require("which-key")
+wk.setup({
+  triggers = {
+    { "<leader>", mode = { "n", "v" } },
+  },
+})
+--wk.add({
+--  { "K", "<cmd>lua show_documentation()<cr>", desc = "Get Type Information.", mode = "n" },
+--  { "j", "gj", desc = "Wrapped down", mode = "n" },
+--  { "k", "gk", desc = "Wrapped up", mode = "n" },
+--  { "<leader>ai", "AnsiEsc", desc = "Replace ansi escape codes with colors", mode = "n" },
+--  { "<leader>D", "<cmd>lua vim.lsp.buf.declarations()<cr>", desc = "Jump to declaration", mode = "n" },
+--})
+
+
 vim.api.nvim_set_keymap('n', 'j', 'gj', {}) -- wrapped down
 vim.api.nvim_set_keymap('n', 'k', 'gk', {}) -- wrapped up
 

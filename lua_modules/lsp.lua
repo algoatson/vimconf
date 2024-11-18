@@ -60,7 +60,7 @@ require('lspconfig').lua_ls.setup({
 })
 
 require('lspconfig').clangd.setup({
-  cmd = {"clangd"}
+  cmd = {'clangd', '--background-index', '--clang-tidy', '--log=verbose'}
 })
 
 require('lspconfig').gopls.setup({
