@@ -607,6 +607,22 @@
         "type": "github"
       }
     },
+    "nvim-bufferline-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1732824069,
+        "narHash": "sha256-zqz2GMius0gLxtgxt12RmLUVQFVaWe+MQaGCfUGr6bI=",
+        "owner": "akinsho",
+        "repo": "bufferline.nvim",
+        "rev": "261a72b90d6db4ed8014f7bda976bcdc9dd7ce76",
+        "type": "github"
+      },
+      "original": {
+        "owner": "akinsho",
+        "repo": "bufferline.nvim",
+        "type": "github"
+      }
+    },
     "nvim-cmp": {
       "flake": false,
       "locked": {
@@ -687,6 +703,22 @@
         "type": "github"
       }
     },
+    "nvim-diffview-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1718279802,
+        "narHash": "sha256-SX+ybIzL/w6uyCy4iZKnWnzTFwqB1oXSgyYVAdpdKi8=",
+        "owner": "sindrets",
+        "repo": "diffview.nvim",
+        "rev": "4516612fe98ff56ae0415a259ff6361a89419b0a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sindrets",
+        "repo": "diffview.nvim",
+        "type": "github"
+      }
+    },
     "nvim-glow-src": {
       "flake": false,
       "locked": {
@@ -716,6 +748,22 @@
       "original": {
         "owner": "p00f",
         "repo": "godbolt.nvim",
+        "type": "github"
+      }
+    },
+    "nvim-lightbulb-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1729134062,
+        "narHash": "sha256-JfXSuOBwyxgH/PzzcBQ7OqoXHkLGZSCYutYHLocbTto=",
+        "owner": "kosayoda",
+        "repo": "nvim-lightbulb",
+        "rev": "33d4c95e0e853956bc9468b70b3064c87d5abaca",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kosayoda",
+        "repo": "nvim-lightbulb",
         "type": "github"
       }
     },
@@ -751,6 +799,22 @@
         "type": "github"
       }
     },
+    "nvim-oil-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1732554633,
+        "narHash": "sha256-Ji76SrTxOzWqfqGlpteuEpoXihJaSrTbDZpkVttXmEs=",
+        "owner": "stevearc",
+        "repo": "oil.nvim",
+        "rev": "3c2de37accead0240fbe812f5ccdedfe0b973557",
+        "type": "github"
+      },
+      "original": {
+        "owner": "stevearc",
+        "repo": "oil.nvim",
+        "type": "github"
+      }
+    },
     "nvim-presence-src": {
       "flake": false,
       "locked": {
@@ -764,6 +828,54 @@
       "original": {
         "owner": "andweeb",
         "repo": "presence.nvim",
+        "type": "github"
+      }
+    },
+    "nvim-pylsp-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1724619136,
+        "narHash": "sha256-oFqa7DtFpJmDZrw+GJqrFH3QqnMAu9159q3IWT9vRko=",
+        "owner": "python-lsp",
+        "repo": "python-lsp-server",
+        "rev": "eb61ccd97bbe9c58fbde6496a78015ee3c129146",
+        "type": "github"
+      },
+      "original": {
+        "owner": "python-lsp",
+        "repo": "python-lsp-server",
+        "type": "github"
+      }
+    },
+    "nvim-pyright-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1732906661,
+        "narHash": "sha256-jOKkI1Ys/zZUF05CxMx88y7aDirqjHmeM55m1eQMu+0=",
+        "owner": "microsoft",
+        "repo": "pyright",
+        "rev": "01e33d7b5bbb964fedbd6a1a737d4897b747d30b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "microsoft",
+        "repo": "pyright",
+        "type": "github"
+      }
+    },
+    "nvim-startup-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1713295875,
+        "narHash": "sha256-rNp8PMMt2+ATJdHrcSrnRcOtScKOh4HUPU8aOyvkLGM=",
+        "owner": "algoatson",
+        "repo": "startup.nvim",
+        "rev": "0f7b10ade73290ad3e80ff2cb76750ce2ee632a4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "algoatson",
+        "repo": "startup.nvim",
         "type": "github"
       }
     },
@@ -799,6 +911,22 @@
         "type": "github"
       }
     },
+    "nvim-tokyonight-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1732026921,
+        "narHash": "sha256-vKXlFHzga9DihzDn+v+j3pMNDfvhYHcCT8GpPs0Uxgg=",
+        "owner": "folke",
+        "repo": "tokyonight.nvim",
+        "rev": "c2725eb6d086c8c9624456d734bd365194660017",
+        "type": "github"
+      },
+      "original": {
+        "owner": "folke",
+        "repo": "tokyonight.nvim",
+        "type": "github"
+      }
+    },
     "nvim-trailblazer-src": {
       "flake": false,
       "locked": {
@@ -828,6 +956,22 @@
       "original": {
         "owner": "nvim-treesitter",
         "repo": "nvim-treesitter",
+        "type": "github"
+      }
+    },
+    "nvim-typos-lsp-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1731116564,
+        "narHash": "sha256-MnN7cMbvQef3UEQzsrH6i0O+f1nnfHJVI8O8NmBUpuo=",
+        "owner": "tekumara",
+        "repo": "typos-lsp",
+        "rev": "045dacc9f3e9752f0d65ff791c2f92b014cb3871",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tekumara",
+        "repo": "typos-lsp",
         "type": "github"
       }
     },
@@ -913,20 +1057,29 @@
         "nui-nvim-src": "nui-nvim-src",
         "nvim-async-src": "nvim-async-src",
         "nvim-autopairs-src": "nvim-autopairs-src",
+        "nvim-bufferline-src": "nvim-bufferline-src",
         "nvim-cmp": "nvim-cmp",
         "nvim-colorizer-src": "nvim-colorizer-src",
         "nvim-dap-src": "nvim-dap-src",
         "nvim-dap-ui-src": "nvim-dap-ui-src",
         "nvim-dap-virtual-text-src": "nvim-dap-virtual-text-src",
+        "nvim-diffview-src": "nvim-diffview-src",
         "nvim-glow-src": "nvim-glow-src",
         "nvim-godbolt-src": "nvim-godbolt-src",
+        "nvim-lightbulb-src": "nvim-lightbulb-src",
         "nvim-matchup-src": "nvim-matchup-src",
         "nvim-obsidian-src": "nvim-obsidian-src",
+        "nvim-oil-src": "nvim-oil-src",
         "nvim-presence-src": "nvim-presence-src",
+        "nvim-pylsp-src": "nvim-pylsp-src",
+        "nvim-pyright-src": "nvim-pyright-src",
+        "nvim-startup-src": "nvim-startup-src",
         "nvim-surround-src": "nvim-surround-src",
         "nvim-tagbar-src": "nvim-tagbar-src",
+        "nvim-tokyonight-src": "nvim-tokyonight-src",
         "nvim-trailblazer-src": "nvim-trailblazer-src",
         "nvim-treesitter-src": "nvim-treesitter-src",
+        "nvim-typos-lsp-src": "nvim-typos-lsp-src",
         "nvim-ufo-src": "nvim-ufo-src",
         "plenary-nvim-src": "plenary-nvim-src",
         "quick-scope-src": "quick-scope-src",

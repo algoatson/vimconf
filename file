@@ -1,0 +1,254 @@
+ ai = cmd "AnsiEsc" "Replace ansi escape codes with colors";
+      D = cmd "lua vim.lsp.buf.declaration()" "Jump to Declaration";
+      d = cmd "lua vim.lsp.buf.definition()" "Jump to Definition";
+      i = cmd "lua vim.lsp.buf.implementation()" "Jump to Implementation";
+      s = cmd "lua vim.lsp.buf.signature_help()" "Get function signature";
+      u = { "<cmd>UndotreeToggle<CR>" "Trigger UndoTree" },
+
+      "yg" = { "<cmd> GitLink<CR>" "Link to git url" },
+      "yb" = { "<cmd> GitLink blame<CR>" "Link to git blame" },
+      "k" = { "<cmd>lua vim.lsp.buf.type_definition()<CR>" "Get type definition" },
+      "rn" = { "<cmd>lua vim.lsp.buf.rename()<CR>" "Rename function/variable" },
+      "ca" = { "<cmd>lua vim.lsp.buf.code_action()<CR>" "Perform code action" },
+      "r" = {
+        "<cmd>lua vim.lsp.buf.references()<CR>"
+        "Get function/variable refs"
+      },
+      "e" = {
+        "<cmd>lua vim.diagnostic.open_float()<CR>"
+        "Get lsp errors"
+      },
+      "dn" = {
+        "<cmd>lua vim.diagnostic.goto_next()<CR>"
+        "next diag"
+      },
+      "dp" = {
+        "<cmd>lua vim.diagnostic.goto_prev()<CR>"
+        "prev diag"
+      },
+      "mb" = { ":VimtexCompile<CR>" "build latex buffer" },
+      "f" = { "<cmd>lua vim.lsp.buf.formatting()<CR>" "Format buffer" },
+      "bb" = { "<cmd>Telescope buffers<cr>" "Get buffer list" },
+      "fb" = { "<cmd>Telescope file_browser<cr>" "Get buffer list" },
+      "gg" = { "<cmd>Telescope live_grep<cr>" "Fzf fuzzy search" },
+      "gp" = { "<cmd>Telescope projects<cr>" "Show recent projects" },
+      "ph" = { "<cmd>Telescope find_files<cr>" "Find project files" },
+      "tt" = { "<cmd>Telescope<cr>" "Open telescope" },
+      "tk" = { "<cmd>Telescope keymaps<cr>" "Telescope keymaps" },
+      "ee" = { "<cmd>InsertEmoji<cr>" "Telescope Emojis" },
+      "os" = { "<cmd>ObsidianQuickSwitch<cr>" "Obsidian Quick Switch" },
+      "['<leader>']" = { "<cmd>Telescope find_files<cr>" "search files" },
+      "n" = { "<cmd>lua require(\"sg.telescope\").fuzzy_search_results()<CR>" "sourcegraph search" },
+
+      "ws" = { "<cmd>sp<cr>" "Split window horizontally" },
+      "wv" = { "<cmd>vs<cr>" "Split window vertically" },
+      "bd" = { "<cmd>q<cr>" "Delete buffer" },
+      "bn" = { "<cmd>bnext<cr>" "Next buffer" },
+      "bp" = { "<cmd>bprev<cr>" "Previous buffer" },
+      "bN" = { "<cmd>tabedit<cr>" "New buffer/tab" },
+      "bD" = { "<cmd>Bclose!<cr>" "Delete buffer aggressively" },
+      "wd" = { "<cmd>q<cr>" "Delete window" },
+      "wl" = { "<cmd>wincmd l<cr>" "Move window right" },
+      "wj" = { "<cmd>wincmd j<cr>" "Move window down" },
+      "wk" = { "<cmd>wincmd k<cr>" "Move window up" },
+      "wh" = { "<cmd>wincmd h<cr>" "Move window left" },
+      "we" = { "<cmd>wincmd w<cr>" "Focus main window" },
+      "wf" = { "<cmd>NvimTreeFocus<cr>" "Focus Nvim Tree" },
+      "gs" =
+        [ "<cmd>lua require('neogit').open()<CR>" "Open neogit (magit clone)" },
+      "gb" = { "<cmd>BlamerToggle<CR>" "Toggle git blame" },
+      "gc" = { "<cmd>Neogen<CR>" "generate comments boilerplate" },
+      "gd" = { "<cmd>GodboltCompiler telescope<CR>" "Godbolt Compiler" },
+      "l" = { "<cmd>Telescope resume<CR>" "last telescope query" },
+
+      "gf" = {
+        "<cmd>lua require('telescope.builtin').live_grep {default_text='function|fn|func|def'}<CR>"
+        "grep for functions only"
+      },
+      "hs" = { "<cmd>Gitsigns preview_hunk<CR>" "preview hunk" },
+      "hn" = { "<cmd>Gitsigns next_hunk<CR>" "next hunk" },
+      "hp" = { "<cmd>Gitsigns prev_hunk<CR>" "prev hunk" },
+
+      "rl" = {
+        "<cmd> lua require('ferris.methods.view_memory_layout')()<CR>"
+        "View memory layout"
+      },
+      "rhi" = {
+        "<cmd> lua require('ferris.methods.view_hir')()<CR>"
+        "View MIR"
+      },
+      "rmi" = {
+        "<cmd> lua require('ferris.methods.view_mir')()<CR>"
+        "View MIR"
+      },
+      "rb" = {
+        "<cmd> lua require('ferris.methods.rebuild_macros')()<CR>"
+        "Rebuild macros"
+      },
+      "rm" = {
+        "<cmd>lua vim.cmd.RustLsp('expandMacro')<CR>"
+        "Expand macro"
+      },
+      "rh" = {
+        "cmd lua toggle_inlay_hints()<CR>"
+        "toggle inlay type hints"
+      },
+      "rpm" = {
+        "cmd lua vimd.cmd.RustLsp('parentModule')<CR>"
+        "go to parent module"
+      },
+      "rJ" = {
+        "cmd lua vim.cmd.RustLsp('joinLines')<CR>"
+        "join lines rust"
+      },
+
+      # crates.nvim
+      "ct" = {
+        "<cmd>lua require('crates').toggle()<CR>"
+        "enable or disable UI elements"
+      },
+      "cr" = {
+        "<cmd>lua require('crates').reload()<CR>"
+        "reload data (clears cache)"
+      },
+      "cS" = {
+        "<cmd>lua require('crates').show_popup()<CR>"
+        "show/hide popup with crate details, all versions, all features or details about one feature."
+      },
+      "cv" = {
+        "<cmd>lua require('crates').show_versions_popup()<CR>"
+        "same as crates.show_popup() but always show versions"
+      },
+      "cf" = {
+        "<cmd>lua require('crates').show_features_popup()<CR>"
+        "same as crates.show_popup() but always show features or features details."
+      },
+      "cd" = {
+        "<cmd>lua require('crates').show_dependencies_popup()<CR>"
+        "same as crates.show_popup() but always show dependencies."
+      },
+      "cu" = {
+        "<cmd>lua require('crates').update_crate()<CR>"
+        "update a crate"
+      },
+      "cUg" = {
+        "<cmd>lua require('crates').upgrade_crates()<CR>"
+        "update the crates on the lines visually selected."
+      },
+      "cUa" = {
+        "<cmd>lua require('crates').update_all_crates()<CR>"
+        "update all crates"
+      },
+      "cx" = {
+        "<cmd>lua require('crates').expand_plain_crate_to_inline_table()<CR>"
+        "expand a plain crate declaration into an inline table."
+      },
+      "cX" = {
+        "<cmd>lua require('crates').extract_crate_into_table()<CR>"
+        "extract an crate declaration from a dependency section into a table."
+      },
+      "cH" = {
+        "<cmd>lua require('crates').open_homepage()<CR>"
+        "open the homepage of the crate on the current line."
+      },
+      "cR" = {
+        "<cmd>lua require('crates').open_repository()<CR>"
+        "open the repository page of the crate on the current line."
+      },
+      "cD" = {
+        "<cmd>lua require('crates').open_documentation()<CR>"
+        "open the documentation page of the crate on the current line."
+      },
+      "cC" = {
+        "<cmd>lua require('crates').open_crates_io()<CR>"
+        "open the crates.io page of the crate on the current line."
+      },
+      "cL" = {
+        "<cmd>lua require('crates').open_lib_rs()<CR>"
+        "open the lib.rs page of the crate on the current line."
+      },
+
+      "cI" = {
+        "<cmd>lua setup_layout()<CR>"
+        "setup C window layout"
+      },
+
+      "cW" = {
+        "<cmd>lua undo_layout()<CR>"
+        "undo C window layout"
+      },
+
+      "bw" = {
+        "<cmd>enew<CR>"
+        "open a new buffer"
+      },
+      "tx" = {
+        "<cmd>terminal<CR>"
+        "open a terminal"
+      },
+
+      "gx" = { "<cmd>Godbolt<CR><CR>" "compile and show assembly" },
+
+      "gi" = { "<cmd>GuessIndent<CR>" "guess indent again" },
+
+      # adga specific things
+      "ad" = { "<cmd>CornelisGoToDefinition<CR>" "Goto agda defn" },
+      "ar" = { "<cmd>CornelisLoad<CR>" "Reload Agda buffer" },
+      "aR" = { "<cmd>CornelisRefine<CR>" "Refine type" },
+      "agn" = { "<cmd>CornelisNextGoal<CR>" "Goto next goal" },
+      "agp" = { "<cmd>CornelisPrevGoal<CR>" "Goto prev goal" },
+      "as" = { "<cmd>CornelisSolve<CR>" "Goto prev goal" },
+      "at" = { "<cmd>CornelisAuto<CR>" "Auto whatever that means" },
+      "aK" = { "<cmd>CornelisTypeContext<CR>" "Type context" },
+      "amc" = { "<cmd>CornelisMakeCase<CR>" "Make case" },
+
+      # hex editors
+      "xh" = { "<cmd>HexToggle<CR>" "Hex Editor Toggle" },
+
+      # trouble keybinds
+      "xx" = { "<cmd>TroubleToggle<CR>" "Toggle trouble diagnostics" },
+      "xw" = { "<cmd>TroubleToggle workspace_diagnostics<CR>" "Toggle trouble workspace diagnostics" },
+      "xd" = { "<cmd>TroubleToggle document_diagnostics<CR>" "Toggle trouble document diagnostics" },
+      "xq" = { "<cmd>TroubleToggle quickfix<CR>" "Toggle trouble quickfix list" },
+      "xl" = { "<cmd>TroubleToggle loclist<CR>" "Toggle trouble local list" },
+      "xr" = { "<cmd>TroubleToggle lsp_references<CR>" "Toggle trouble lsp references" },
+      "xn" = { "cmd lua require(\"trouble\").next({skip_groups = true, jump = true})<CR>" "Jump next diagnostic" },
+      "xp" = { "cmd lua require(\"trouble\").previous({skip_groups = true, jump = true})<CR>" "Jump next diagnostic" },
+
+      # dap shit
+      "pc" = { "<Cmd>lua require'dap'.continue()<CR>" "Dap Continue" },
+      "po" = { "<Cmd>lua require'dap'.step_over()<CR>" "Dap Step over" },
+      "pi" = { "<Cmd>lua require'dap'.step_into()<CR>" "Dap Step into" },
+      "pO" = { "<Cmd>lua require'dap'.step_out()<CR>" "Dap Step out" },
+      "pb" = { "<Cmd>lua require'dap'.toggle_breakpoint()<CR>" "Dap Toggle breakpoint" },
+      "pr" = { "<Cmd>lua require'dap'.repl.open()<CR>" "Dap Open repl" },
+      "pl" = { "<Cmd>lua require'dap'.run_last()<CR>" "Dap Run last" },
+      "pu" = { "<Cmd>lua require'dapui'.toggle()<CR>" "Dap UI Toggle" },
+      "pC" = { "<Cmd>lua require'telescope'.extensions.dap.commands{}<CR>" "Dap commands" },
+      "pa" = { "<Cmd>lua require'telescope'.extensions.dap.configurations{}<CR>" "Dap configurations" },
+      "pL" = { "<Cmd>lua require'telescope'.extensions.dap.list_breakpoints{}<CR>" "Dap list breakpoints" },
+      "pv" = { "<Cmd>lua require'telescope'.extensions.dap.variables{}<CR>" "Dap list variables" },
+      "pf" = { "<Cmd>lua require'telescope'.extensions.dap.frames{}<CR>" "Dap list frames" },
+      "pe" = { "<Cmd>lua require('dapui').eval(vim.fn.input('Expression to evaluate: '))<CR>" "Dap eval expression" },
+      "ps" = { "<Cmd>lua require('dap.ext.vscode').load_launchjs(nil, { [\"lldb\"] = {\"rust\", \"c\"} })<CR>" "Dap load configs" },
+
+
+
+      "na" = { "<Cmd>lua require(\"ts-node-action\").node_action{}<CR>" "Trigger Node Action" },
+
+
+      "tm" = { "<Cmd>lua require(\"trailblazer\").new_trail_mark()<CR>" "Trailblazer: new trail mark" },
+      "tb" = { "<Cmd>lua require(\"trailblazer\").track_back()<CR>" "Trailblazer: track back (deletes mark)" },
+      "tn" = { "<Cmd>lua require(\"trailblazer\").peek_move_next_down()<CR>" "Trailblazer: next down" },
+      "tp" = { "<Cmd>lua require(\"trailblazer\").peek_move_previous_up()<CR>" "Trailblazer: previous up" },
+      "tj" = { "<Cmd>lua require(\"trailblazer\").move_to_nearest()<CR>" "Trailblazer: jump to nearest" },
+      "tl" = { "<Cmd>lua require(\"trailblazer\").toggle_trail_mark_list()<CR>" "Trailblazer: list" },
+      "tD" = { "<Cmd>lua require(\"trailblazer\").delete_all_trail_marks()<CR>" "Trailblazer: nuke all trail marks" },
+      "tq" = { "<Cmd>lua require(\"trailblazer\").paste_at_last_trail_mark()<CR>" "Trailblazer: paste at last trail mark" },
+      "tQ" = { "<Cmd>lua require(\"trailblazer\").paste_at_all_trail_marks()<CR>" "Trailblazer: paste at all trail marks" },
+      "ts" = { "<Cmd>lua require(\"trailblazer\").switch_to_next_trail_mark_stack()<CR>" "Trailblazer: next mark stack" },
+      "tS" = { "<Cmd>lua require(\"trailblazer\").switch_to_previous_trail_mark_stack()<CR>" "Trailblazer: previous mark stack" },
+      "to" = { "<Cmd>lua require(\"trailblazer\").set_trail_mark_stack_sort_mode()<CR>" "Trailblazer: sort mode" },
+      "ti" = { "<Cmd>lua require(\"trailblazer\").set_trail_mark_select_mode()<CR>" "Trailblazer: select mode" },
+      "tz" = { "<Cmd>TrailBlazerSaveSession<CR>" "Trailblazer: save" },
+      "tZ" = { "<Cmd>TrailBlazerLoadSession<CR>" "Trailblazer: load" },

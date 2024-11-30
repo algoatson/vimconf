@@ -33,7 +33,8 @@ require("glow").setup({
 
 require("nvim-surround").setup()
 
+require("neogen").setup()
+
 vim.api.nvim_set_keymap('n', '<leader>u', '<cmd>UndotreeToggle<cr>', {})
-vim.api.nvim_set_keymap('n', '<leader>', '<cmd><cr>', {})
 vim.api.nvim_set_keymap('n', '<leader>ai', '<cmd>AnsiEsc<cr>', {}) -- ansiesc. should go in misc
 

@@ -306,6 +306,50 @@
       flake = false;
     };
 
+    nvim-pylsp-src = {
+      url = "github:python-lsp/python-lsp-server";
+      flake = false;
+    };
+
+    nvim-pyright-src = {
+      url = "github:microsoft/pyright";
+      flake = false;
+    };
+
+    nvim-typos-lsp-src = {
+      url = "github:tekumara/typos-lsp";
+      flake = false;
+    };
+
+    nvim-tokyonight-src = {
+      url = "github:folke/tokyonight.nvim";
+      flake = false;
+    };
+
+    nvim-startup-src = {
+      url = "github:algoatson/startup.nvim";
+      flake = false;
+    };
+
+    nvim-oil-src = {
+      url = "github:stevearc/oil.nvim";
+      flake = false;
+    };
+
+    nvim-bufferline-src = {
+      url = "github:akinsho/bufferline.nvim";
+      flake = false;
+    };
+
+    nvim-diffview-src = {
+      url = "github:sindrets/diffview.nvim";
+      flake = false;
+    };
+
+    nvim-lightbulb-src = {
+      url = "github:kosayoda/nvim-lightbulb";
+      flake = false;
+    };
   };
 
   outputs = inputs@{ self, flake-utils, nixpkgs, ... }:
@@ -321,6 +365,10 @@
         pluginList = with pkgs; [
           # essentials
           which-key
+          nvim-oil
+          nvim-bufferline
+          nvim-diffview
+          nvim-lightbulb
 
           # aesthetics
           gruvbox-nvim
@@ -328,6 +376,8 @@
           vimPlugins.lualine-nvim
           vimPlugins.tabline-nvim
           vimPlugins.nvim-web-devicons
+          nvim-tokyonight
+          nvim-startup
 
           # telescope
           telescope-nvim
@@ -349,6 +399,7 @@
           nvim-glow
           nvim-godbolt
           nvim-surround
+          neogen
 
           # git
           vimPlugins.neogit
@@ -388,6 +439,10 @@
           node-type-nvim
           floating-input
           nvim-tagbar
+          typos-lsp
+          pyright
+          nvim-pylsp
+          nvim-pyright
 
           # treesitter
           nvim-async

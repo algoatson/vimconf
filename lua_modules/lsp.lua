@@ -68,7 +68,19 @@ require('lspconfig').gopls.setup({
 })
 
 require('lspconfig').r_language_server.setup({
-  cmd = {"R", "--slave", "-e", "langaugeserver::run()" },
+  cmd = {"R", "--slave", "-e", "langaugeserver::run()" }
+})
+
+require('lspconfig').pyright.setup({
+  cmd = { "pyright-langserver", "--stdio" }
+})
+
+require('lspconfig').pylsp.setup({
+  cmd = {"pylsp"}
+})
+
+require('lspconfig').typos_lsp.setup({
+  cmd = {"typos-lsp"}
 })
 
 require('lsp_signature').setup({
@@ -237,33 +249,4 @@ vim.api.nvim_set_keymap('n', '<leader>cu', '<cmd>lua require("crates").update_cr
 vim.api.nvim_set_keymap('n', '<leader>cua', '<cmd>lua require("crates").update_all_crate()<cr>', {})
 vim.api.nvim_set_keymap('n', '<leader>cU', '<cmd>lua require("crates").upgrade_crate()<cr>', {})
 vim.api.nvim_set_keymap('n', '<leader>cUa', '<cmd>lua require("crates").upgrade_all_crate()<cr>', {})
-
 vim.api.nvim_set_keymap('n', '<leader>na', '<cmd>lua require("ts-node-action").node_action({})<cr>', {})
-vim.api.nvim_set_keymap('n', '<leader>', '<cmd><cr>', {})
-vim.api.nvim_set_keymap('n', '<leader>', '<cmd><cr>', {})
-vim.api.nvim_set_keymap('n', '<leader>', '<cmd><cr>', {})
-vim.api.nvim_set_keymap('n', '<leader>', '<cmd><cr>', {})
-
-
-
-vim.api.nvim_set_keymap('n', '<leader>', '<cmd><cr>', {})
-vim.api.nvim_set_keymap('n', '<leader>', '<cmd><cr>', {})
-vim.api.nvim_set_keymap('n', '<leader>', '<cmd><cr>', {})
-
-
-
-vim.api.nvim_set_keymap('n', '<leader>', '<cmd><cr>', {})
-vim.api.nvim_set_keymap('n', '<leader>', '<cmd><cr>', {})
-vim.api.nvim_set_keymap('n', '<leader>', '<cmd><cr>', {})
-
-
-
-vim.api.nvim_set_keymap('n', '<leader>', '<cmd><cr>', {})
-vim.api.nvim_set_keymap('n', '<leader>', '<cmd><cr>', {})
-vim.api.nvim_set_keymap('n', '<leader>', '<cmd><cr>', {})
-
-
-
-vim.api.nvim_set_keymap('n', '<leader>', '<cmd><cr>', {})
-vim.api.nvim_set_keymap('n', '<leader>', '<cmd><cr>', {})
-vim.api.nvim_set_keymap('n', '<leader>', '<cmd><cr>', {})

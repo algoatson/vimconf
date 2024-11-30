@@ -32,7 +32,5 @@ vim.api.nvim_set_keymap('n', '<leader>gg', '<cmd>Telescope live_grep<cr>', {})
 vim.api.nvim_set_keymap('n', '<leader><leader>', '<cmd>Telescope find_files<cr>', {})
 vim.api.nvim_set_keymap('n', '<leader>gf', '<cmd>require("telescope.builtins").live_grep {default_text="function"}<cr>', {})
 vim.api.nvim_set_keymap('n', '<leader>l', '<cmd>Telescope resume<cr>', {})
-vim.api.nvim_set_keymap('n', '<leader>', '<cmd><cr>', {})
-vim.api.nvim_set_keymap('n', '<leader>', '<cmd><cr>', {})
 
 vim.api.nvim_set_keymap('n', '<leader>z', '<cmd>lua require("yazi").yazi()<cr>', {})

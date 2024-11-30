@@ -144,4 +144,24 @@ with inputs; {
   nvim-godbolt = plugin "nvim-godbolt" nvim-godbolt-src;
 
   nvim-surround = plugin "nvim-surround" nvim-surround-src;
+
+  nvim-pyright = plugin "nvim-pyright" nvim-pyright-src;
+
+  nvim-pylsp = plugin "nvim-pylsp" nvim-pylsp-src;
+
+  nvim-typos-lsp = plugin "nvim-typos-lsp" nvim-typos-lsp-src;
+
+  nvim-tokyonight = plugin "nvim-tokyonight" nvim-tokyonight-src;
+
+  nvim-startup = plugin "nvim-startup" nvim-startup-src;
+
+  nvim-oil = plugin "nvim-oil" nvim-oil-src;
+
+  nvim-bufferline = plugin "nvim-bufferline" nvim-bufferline-src;
+
+  nvim-diffview = plugin "nvim-diffview" nvim-diffview-src;
+
+  nvim-lightbulb = plugin "nvim-lightbulb" nvim-lightbulb-src;
+
+
 }
