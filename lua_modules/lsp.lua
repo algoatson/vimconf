@@ -79,9 +79,31 @@ require('lspconfig').pylsp.setup({
   cmd = {"pylsp"}
 })
 
-require('lspconfig').typos_lsp.setup({
-  cmd = {"typos-lsp"}
+-- require('lspconfig').typos_lsp.setup({
+--   cmd = {"typos-lsp"}
+-- })
+
+require('lspconfig').nixd.setup({
+  autostart = true,
+  cmd = {"nixd"}
 })
+
+require('lspconfig').nil_ls.setup {
+  autostart = true,
+  capabilities = caps,
+  cmd = { "nil" },
+  settings = {
+    ['nil'] = {
+      testSetting = 42,
+      formatting = {
+        command = { "nixfmt" },
+      },
+    },
+  },
+}
+-- require('lspconfig').nil.setup({
+--   cmd = {"nil"}
+-- })
 
 require('lsp_signature').setup({
   bind = true,

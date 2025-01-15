@@ -163,5 +163,7 @@ with inputs; {
 
   nvim-lightbulb = plugin "nvim-lightbulb" nvim-lightbulb-src;
 
+  nvim-nixd = plugin "nvim-nixd" nvim-nixd-src;
 
+  nvim-nil = plugin "nvim-nil" nvim-nil-src;
 }

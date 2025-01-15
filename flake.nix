@@ -350,6 +350,16 @@
       url = "github:kosayoda/nvim-lightbulb";
       flake = false;
     };
+
+    # nvim-nixd-src = {
+    #   url = "github:nix-community/nixd";
+    #   flake = true;
+    # };
+    #
+    # nvim-nil-src = {
+    #   url = "github:oxalica/nil";
+    #   flake = true;
+    # };
   };
 
   outputs = inputs@{ self, flake-utils, nixpkgs, ... }:
@@ -443,6 +453,8 @@
           pyright
           nvim-pylsp
           nvim-pyright
+          # nvim-nixd
+          # nvim-nil
 
           # treesitter
           nvim-async

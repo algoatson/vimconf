@@ -82,6 +82,7 @@ require("tokyonight").setup({
   },
   dim_inactive = false,
   transparent_mode = false,
+  transparent = false,
   ---@param highlights Highlights
   ---@param colors ColorScheme
   on_highlights = function(hl, c)
@@ -171,7 +172,7 @@ require("evangelion").setup({
 })
 
 vim.o.background = "dark"
-vim.cmd("set termguicolors")
+vim.o.termguicolors = true
 -- vim.cmd("colorscheme gruvbox")
 -- vim.cmd("colorscheme evangelion")
 vim.cmd("colorscheme tokyonight")
@@ -179,7 +180,7 @@ vim.cmd("colorscheme tokyonight")
 require('lualine').setup(
   {
     option = {
-      theme = "evangelion",
+      theme = "tokyonight",
       component_separators = {
         left = "░",
         right = "░",
@@ -210,3 +211,4 @@ require('colorizer').setup() -- this will create an autocmd for FileType *
 
 require('startup').setup({theme = "nvim_sharp"})
 
+require('bufferline').setup()
